@@ -24,5 +24,29 @@ namespace HW_WPF_20200225_StylesAndResources
         {
             InitializeComponent();
         }
+
+        private void WindowOne_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 window1 = new Window1();
+            window1.Show();
+        }
+
+        private void WindowTwo_Click(object sender, RoutedEventArgs e)
+        {
+            Window2 window2 = new Window2();
+            window2.Show();
+        }
+
+        private void WindowThree_Click(object sender, RoutedEventArgs e)
+        {
+            Window3 window3 = new Window3();
+            window3.Show();
+        }
+
+        private void WindowFour_Click(object sender, RoutedEventArgs e)
+        {
+            Window4 window4 = new Window4();
+            window4.Show();
+        }
     }
 }

@@ -5,8 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HW_WPF_20200225_StylesAndResources"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="200" Width="700">
     <Grid>
-        
+        <GroupBox Header="HW Style and Recources">
+            <WrapPanel Orientation="Horizontal"
+                       HorizontalAlignment="Center"
+                       VerticalAlignment="Center">
+                <Button Content="Window 1" Margin="20" Padding="10"
+                        x:Name="WindowOne" Click="WindowOne_Click"/>
+                
+                <Button Content="Window 2" Margin="20" Padding="10"
+                        x:Name="WindowTwo" Click="WindowTwo_Click"/>
+                
+                <Button Content="Window 3" Margin="20" Padding="10"
+                        x:Name="WindowThree" Click="WindowThree_Click"/>
+
+                <Button Content="Window 4" Margin="20" Padding="10"
+                        x:Name="WindowFour" Click="WindowFour_Click"/>
+            </WrapPanel>
+        </GroupBox>
     </Grid>
 </Window>
