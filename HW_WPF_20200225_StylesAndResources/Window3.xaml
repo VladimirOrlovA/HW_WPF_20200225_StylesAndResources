@@ -7,6 +7,13 @@
         mc:Ignorable="d"
         Title="Window3" Height="600" Width="700"
         FontFamily="arial" FontSize="12">
+
+    <Window.Resources>
+        <Style TargetType="TextBox">
+            <Setter Property="Background" Value="LightGray"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+        </Style>
+    </Window.Resources>
     
     <Grid>
         <StackPanel VerticalAlignment="Center"
@@ -40,9 +47,9 @@
                     <RowDefinition Height="30"></RowDefinition>
                     <RowDefinition Height="30"></RowDefinition>
                     <RowDefinition Height="30"></RowDefinition>
-                    <RowDefinition></RowDefinition>
+                    <RowDefinition Height="70"></RowDefinition>
                     <RowDefinition Height="30"></RowDefinition>
-                    <RowDefinition></RowDefinition>
+                    <RowDefinition Height="30"></RowDefinition>
                     <RowDefinition Height="60"></RowDefinition>
                 </Grid.RowDefinitions>
 
@@ -51,10 +58,10 @@
                 <TextBlock Grid.Row="2" Grid.Column="0" Text="MESSAGE:" VerticalAlignment="Bottom"><Span Foreground="Red">*</Span></TextBlock>
                 <TextBlock Grid.Row="4" Grid.Column="0" Text="HOW MUCH IS 4+6?" VerticalAlignment="Bottom"><Span Foreground="Red">*</Span></TextBlock>
 
-                <TextBox Grid.Row="1" Grid.Column="0" Height="35" Background="LightGray" HorizontalAlignment="Stretch" Margin="0 0 20 0"/>
-                <TextBox Grid.Row="1" Grid.Column="1" Height="35" Background="LightGray" HorizontalAlignment="Stretch" Margin="20 0 0 0"/>
-                <TextBox Grid.Row="3" Grid.ColumnSpan="2" Height="70" Background="LightGray" HorizontalAlignment="Stretch"/>
-                <TextBox Grid.Row="5" Grid.Column="0" Height="35" Background="LightGray" HorizontalAlignment="Stretch"/>
+                <TextBox Grid.Row="1" Grid.Column="0" Margin="0 0 20 0"/>
+                <TextBox Grid.Row="1" Grid.Column="1" Margin="20 0 0 0"/>
+                <TextBox Grid.Row="3" Grid.ColumnSpan="2"/>
+                <TextBox Grid.Row="5" Grid.Column="0"/>
 
                 <Button Grid.Row="6" Grid.Column="1" Content="SEND" Height="25" Width="120" Background="Red" HorizontalAlignment="Right" HorizontalContentAlignment="Center" Foreground="White"/>
 
