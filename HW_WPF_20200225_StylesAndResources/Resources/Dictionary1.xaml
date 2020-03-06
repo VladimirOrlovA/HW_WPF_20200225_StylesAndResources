@@ -1,0 +1,21 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:HW_WPF_20200225_StylesAndResources.Resources">
+
+    <ControlTemplate x:Key="btnTemplate">
+        <Border BorderThickness="1">
+            <Border.BorderBrush>
+                <VisualBrush>
+                    <VisualBrush.Visual>
+                        <Rectangle StrokeDashArray="5"
+                                    Stroke="Black"
+                                    StrokeThickness="2"/>
+                    </VisualBrush.Visual>
+                </VisualBrush>
+            </Border.BorderBrush>
+            <Button Background="Aquamarine" BorderThickness="0" Content="Button"
+                    Padding="10 5"></Button>
+        </Border>
+    </ControlTemplate>
+
+</ResourceDictionary>

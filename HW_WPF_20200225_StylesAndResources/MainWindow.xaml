@@ -6,13 +6,19 @@
         xmlns:local="clr-namespace:HW_WPF_20200225_StylesAndResources"
         mc:Ignorable="d"
         Title="MainWindow" Height="200" Width="700">
+
+    <Window.Resources>
+        <ResourceDictionary Source="Resources/Dictionary1.xaml" />
+    </Window.Resources>
+    
     <Grid>
         <GroupBox Header="HW Style and Recources">
             <WrapPanel Orientation="Horizontal"
                        HorizontalAlignment="Center"
                        VerticalAlignment="Center">
                 <Button Content="Window 1" Margin="20" Padding="10"
-                        x:Name="WindowOne" Click="WindowOne_Click"/>
+                        x:Name="WindowOne" Click="WindowOne_Click"
+                        Template="{StaticResource btnTemplate}/>
                 
                 <Button Content="Window 2" Margin="20" Padding="10"
                         x:Name="WindowTwo" Click="WindowTwo_Click"/>
