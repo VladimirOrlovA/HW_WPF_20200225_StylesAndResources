@@ -8,35 +8,35 @@
         Title="Window4" Height="450" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20"></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition Width="110"></ColumnDefinition>
+            <ColumnDefinition Width="110"></ColumnDefinition>
+            <ColumnDefinition Width="50"></ColumnDefinition>
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
             <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
+            <RowDefinition Height="130"></RowDefinition>
             <RowDefinition></RowDefinition>
         </Grid.RowDefinitions>
 
-        <TextBlock VerticalAlignment="Bottom" Padding="5 0">
+        <TextBlock Grid.Column="1" VerticalAlignment="Bottom" Padding="5 0">
             <Run>UBER</Run>
-            <Span Foreground="Green">EATS</Span>
+            <Span Foreground="Green" FontStretch="Expanded">EATS</Span>
         </TextBlock>
 
-        <Button Grid.Column="6" Content="Регистрация"  Height="30" Width="100" Background="Black" Foreground="White" VerticalAlignment="Bottom" Margin="5 0"></Button>
-        <Button Grid.Column="5" Content="Вид" Height="30" Width="100" Background="White" VerticalAlignment="Bottom" Margin="5 0"></Button>
+        <Button Grid.Column="6" Content="Регистрация"  Height="30" Width="100" Background="Black" Foreground="White" VerticalAlignment="Bottom"></Button>
+        <Button Grid.Column="5" Content="Вид" Height="30" Width="100" Background="White" VerticalAlignment="Bottom"></Button>
 
-        <TextBlock Grid.Row="1" Grid.ColumnSpan="2" TextWrapping="Wrap"  Padding="5 20">
+        <TextBlock Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" FontSize="20" TextWrapping="Wrap"  Padding="5 20">
             <Run>Найдите ближайшие рестораны, предлагающие доставку</Run>
         </TextBlock>
 
-        <TextBox Grid.Row="2" Grid.ColumnSpan="2" Height="30" VerticalAlignment="Top"></TextBox>
-        <Button Grid.Row="2" Grid.Column="2" Height="30" VerticalAlignment="Top" Content="Поиск" Foreground="White" Background="Green" Margin="10 0"/>
+        <TextBox Grid.Row="2" Grid.Column="1"  Grid.ColumnSpan="2" Height="40" VerticalAlignment="Top"></TextBox>
+        <Button Grid.Row="2"  Grid.Column="3" Height="40" VerticalAlignment="Top" Content="Поиск" Foreground="White" Background="Green" Margin="10 0"/>
     </Grid>
 </Window>
