@@ -5,47 +5,44 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HW_WPF_20200225_StylesAndResources"
         mc:Ignorable="d"
-        Title="Window1" Height="450" Width="800">
+        Title="Window1" Height="450" Width="800" 
+        FontFamily="Arial" FontSize="14">
+
+    <Window.Resources>
+        <ResourceDictionary Source="Resources/Dictionary1.xaml"/>
+    </Window.Resources>
+    
     <Grid>
         <StackPanel VerticalAlignment="Center"
                     Margin="40">
             
             
             <Label Content="YOU NEED GREAT INTERACTIV"
-               HorizontalAlignment="Center"
-               VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
                    Foreground="Gray"/>
             
             <Label Content="WE WORK WITH BRILLIANT CLIENTS."
                    HorizontalAlignment="Center"
-                   VerticalAlignment="Center"
                    FontSize="30"
                    FontWeight="Bold"
                    Margin="0 0 0 30"/>
 
             <StackPanel Orientation="Horizontal"
                         HorizontalAlignment="Center">
-                <TextBox Text="What's your name?*" Width="300" Height="50"
-                         Margin="10 0"
-                         VerticalContentAlignment="Center"
-                         Foreground="Gray"
-                         Padding="20 0"/>
-                <TextBox Text="What's the name of your business?" Width="300" Height="50"
-                         Margin="5 0"/>
+                <TextBox Text="What's your name?*"/>
+                <TextBox Text="What's the name of your business?"/>
             </StackPanel>
 
             <StackPanel Orientation="Horizontal" Margin="20"
                         HorizontalAlignment="Center">
-                <TextBox Text="What's your email address?*" Width="300" Height="50"
-                         Margin="10 0"/>
-                <TextBox Text="What's your phone number?" Width="300" Height="50"
-                         Margin="5 0"/>
+                <TextBox Text="What's your email address?*"/>
+                <TextBox Text="What's your phone number?"/>
             </StackPanel>
 
             <Border BorderBrush="Gray" BorderThickness="0 0 0 1"
                     Height="50" Margin="50 0 50 0">
                 
-                <TextBlock Text="* Don't be shy. We gotta know"
+                <TextBlock Text="* Don't be shy. We gotta know."
                        TextAlignment="Right"
                        Foreground="Gray" Margin="0 0 0 2"/>
             </Border>

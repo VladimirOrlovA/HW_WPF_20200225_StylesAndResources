@@ -7,6 +7,10 @@
         mc:Ignorable="d"
         Title="Window2" Height="450" Width="800">
 
+    <Window.Resources>
+        <ResourceDictionary Source="Resources/Dictionary1.xaml"/>
+    </Window.Resources>
+    
     <StackPanel VerticalAlignment="Center"
                     Margin="40">
 
@@ -15,25 +19,18 @@
                    VerticalAlignment="Center"
                    FontSize="20"
                    FontWeight="Bold"
-                   Margin="0 0 0 30"/>
+                   Margin="50 0 0 30"/>
 
         <StackPanel Orientation="Horizontal"
                         HorizontalAlignment="Center">
-            <TextBox Text="Website" Width="300" Height="50"
-                         Margin="10 0"
-                         VerticalContentAlignment="Center"
-                         Foreground="Black"
-                         Padding="20 0"/>
-            <TextBox Text="Application" Width="300" Height="50"
-                         Margin="5 0"/>
+            <TextBox Text="Website"/>
+            <TextBox Text="Application"/>
         </StackPanel>
 
         <StackPanel Orientation="Horizontal" Margin="20"
                         HorizontalAlignment="Center">
-            <TextBox Text="Branding" Width="300" Height="50"
-                         Margin="10 0"/>
-            <TextBox Text="Content Marketing" Width="300" Height="50"
-                         Margin="5 0"/>
+            <TextBox Text="Branding"/>
+            <TextBox Text="Content Marketing"/>
         </StackPanel>
 
         <Border BorderBrush="Gray" BorderThickness="0 0 0 1"

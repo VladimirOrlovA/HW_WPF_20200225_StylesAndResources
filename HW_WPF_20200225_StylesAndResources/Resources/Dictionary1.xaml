@@ -12,10 +12,23 @@
                                     StrokeThickness="2"/>
                     </VisualBrush.Visual>
                 </VisualBrush>
+                
             </Border.BorderBrush>
-            <Button Background="Lime" BorderThickness="0" Content="Button"
+            <Button Background="Lime" BorderThickness="0" Width="100"
                     Padding="10 5"></Button>
         </Border>
     </ControlTemplate>
+
+    
+    <Style TargetType="TextBox">
+        <Setter Property="Width" Value="300"/>
+        <Setter Property="Height" Value="50"/>
+        <Setter Property="Margin" Value="10 0"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Setter Property="Foreground" Value="Gray"/>
+        <Setter Property="Padding" Value="20 0"/>
+    </Style>
+    
+    
 
 </ResourceDictionary>

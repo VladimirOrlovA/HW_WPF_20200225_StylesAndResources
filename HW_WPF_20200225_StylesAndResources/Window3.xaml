@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HW_WPF_20200225_StylesAndResources"
         mc:Ignorable="d"
-        Title="Window3" Height="600" Width="700">
+        Title="Window3" Height="600" Width="700"
+        FontFamily="arial" FontSize="12">
+    
     <Grid>
         <StackPanel VerticalAlignment="Center"
                     Margin="40">
@@ -18,14 +20,12 @@
                    Foreground="DarkGreen"/>
 
             <TextBlock TextWrapping="Wrap"
-                   FontSize="12"
                    FontWeight="Bold"
                    Margin="0 0 0 30">
                    <Run Text="We are here to answer any question you may have about our combadi experiences. Reach out to us and we'll respond as soon as we can."/>
             </TextBlock>
 
             <TextBlock TextWrapping="Wrap"
-                   FontSize="12"
                    FontWeight="Bold"
                    Margin="0 0 0 30">
                    <Run Text="Even is there something you have always wanted to experience and can't find it on combady, let us know and we promise we'll do our best to find it for you and send you there"/>
@@ -37,27 +37,26 @@
                     <ColumnDefinition></ColumnDefinition>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition Height="30"></RowDefinition>
+                    <RowDefinition Height="30"></RowDefinition>
                     <RowDefinition></RowDefinition>
+                    <RowDefinition Height="30"></RowDefinition>
                     <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
-                    <RowDefinition></RowDefinition>
+                    <RowDefinition Height="60"></RowDefinition>
                 </Grid.RowDefinitions>
 
-                <Label Grid.Row="0" Grid.Column="0" Content="NAME:*" FontSize="12" VerticalAlignment="Bottom"/>
-                <Label Grid.Row="0" Grid.Column="1" Content="EMAIL:*" FontSize="12" VerticalAlignment="Bottom"/>
-                <Label Grid.Row="2" Grid.Column="0" Content="MESSAGE:*" FontSize="12" VerticalAlignment="Bottom"/>
-                <Label Grid.Row="0" Grid.Column="1" Content="EMAIL:*" FontSize="12" VerticalAlignment="Bottom"/>
-                <Label Grid.Row="4" Grid.Column="0" Content="HOW MUCH IS 4+6?*:*" FontSize="12" VerticalAlignment="Bottom"/>
+                <TextBlock Grid.Row="0" Grid.Column="0" Text="NAME:" VerticalAlignment="Bottom"  Margin="0 0 20 0"><Span Foreground="Red">*</Span></TextBlock>
+                <TextBlock Grid.Row="0" Grid.Column="1" Text="EMAIL:" VerticalAlignment="Bottom" Margin="20 0 0 0"><Span Foreground="Red">*</Span></TextBlock>
+                <TextBlock Grid.Row="2" Grid.Column="0" Text="MESSAGE:" VerticalAlignment="Bottom"><Span Foreground="Red">*</Span></TextBlock>
+                <TextBlock Grid.Row="4" Grid.Column="0" Text="HOW MUCH IS 4+6?" VerticalAlignment="Bottom"><Span Foreground="Red">*</Span></TextBlock>
 
-                <TextBox Grid.Row="1" Grid.Column="0" Height="35" Background="LightGray" HorizontalAlignment="Stretch"/>
-                <TextBox Grid.Row="1" Grid.Column="1" Height="35" Background="LightGray" HorizontalAlignment="Stretch"/>
+                <TextBox Grid.Row="1" Grid.Column="0" Height="35" Background="LightGray" HorizontalAlignment="Stretch" Margin="0 0 20 0"/>
+                <TextBox Grid.Row="1" Grid.Column="1" Height="35" Background="LightGray" HorizontalAlignment="Stretch" Margin="20 0 0 0"/>
                 <TextBox Grid.Row="3" Grid.ColumnSpan="2" Height="70" Background="LightGray" HorizontalAlignment="Stretch"/>
                 <TextBox Grid.Row="5" Grid.Column="0" Height="35" Background="LightGray" HorizontalAlignment="Stretch"/>
 
-                <Label Grid.Row="6" Grid.Column="1" Content="SEND" Height="25" Width="120" Background="Red" HorizontalAlignment="Right" HorizontalContentAlignment="Center" FontSize="12" Foreground="White"/>
+                <Button Grid.Row="6" Grid.Column="1" Content="SEND" Height="25" Width="120" Background="Red" HorizontalAlignment="Right" HorizontalContentAlignment="Center" Foreground="White"/>
 
             </Grid>
            
