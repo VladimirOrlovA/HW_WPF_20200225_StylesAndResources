@@ -7,6 +7,36 @@
         mc:Ignorable="d"
         Title="Window4" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <TextBlock VerticalAlignment="Bottom" Padding="5 0">
+            <Run>UBER</Run>
+            <Span Foreground="Green">EATS</Span>
+        </TextBlock>
+
+        <Button Grid.Column="6" Content="Регистрация"  Height="30" Width="100" Background="Black" Foreground="White" VerticalAlignment="Bottom" Margin="5 0"></Button>
+        <Button Grid.Column="5" Content="Вид" Height="30" Width="100" Background="White" VerticalAlignment="Bottom" Margin="5 0"></Button>
+
+        <TextBlock Grid.Row="1" Grid.ColumnSpan="2" TextWrapping="Wrap"  Padding="5 20">
+            <Run>Найдите ближайшие рестораны, предлагающие доставку</Run>
+        </TextBlock>
+
+        <TextBox Grid.Row="2" Grid.ColumnSpan="2" Height="30" VerticalAlignment="Top"></TextBox>
+        <Button Grid.Row="2" Grid.Column="2" Height="30" VerticalAlignment="Top" Content="Поиск" Foreground="White" Background="Green" Margin="10 0"/>
     </Grid>
 </Window>
