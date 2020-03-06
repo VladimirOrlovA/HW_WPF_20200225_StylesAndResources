@@ -8,12 +8,12 @@
                 <VisualBrush>
                     <VisualBrush.Visual>
                         <Rectangle StrokeDashArray="5"
-                                    Stroke="Black"
+                                    Stroke="Red"
                                     StrokeThickness="2"/>
                     </VisualBrush.Visual>
                 </VisualBrush>
             </Border.BorderBrush>
-            <Button Background="Aquamarine" BorderThickness="0" Content="Button"
+            <Button Background="Lime" BorderThickness="0" Content="Button"
                     Padding="10 5"></Button>
         </Border>
     </ControlTemplate>

@@ -18,7 +18,7 @@
                        VerticalAlignment="Center">
                 <Button Content="Window 1" Margin="20" Padding="10"
                         x:Name="WindowOne" Click="WindowOne_Click"
-                        Template="{StaticResource btnTemplate}/>
+                        Template="{StaticResource btnTemplate}"/>
                 
                 <Button Content="Window 2" Margin="20" Padding="10"
                         x:Name="WindowTwo" Click="WindowTwo_Click"/>
