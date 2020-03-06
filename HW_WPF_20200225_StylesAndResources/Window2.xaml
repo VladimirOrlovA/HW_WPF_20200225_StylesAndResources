@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:HW_WPF_20200225_StylesAndResources"
         mc:Ignorable="d"
-        Title="Window2" Height="450" Width="800">
+        Title="Window2" Height="450" Width="800"
+        FontFamily="arial" FontSize="14">
 
     <Window.Resources>
         <ResourceDictionary Source="Resources/Dictionary1.xaml"/>
@@ -33,7 +34,7 @@
             <TextBox Text="Content Marketing"/>
         </StackPanel>
 
-        <Border BorderBrush="Gray" BorderThickness="0 0 0 1"
+        <Border BorderBrush="Gray" BorderThickness="0 0 0 0.5"
                     Height="50" Margin="50 0 50 0">
 
         </Border>
