@@ -21,13 +21,16 @@
                         Template="{StaticResource btnTemplate}"/>
                 
                 <Button Content="Window 2" Margin="20" Padding="10"
-                        x:Name="WindowTwo" Click="WindowTwo_Click"/>
+                        x:Name="WindowTwo" Click="WindowTwo_Click"
+                        Template="{StaticResource btnTemplate}"/>
                 
                 <Button Content="Window 3" Margin="20" Padding="10"
-                        x:Name="WindowThree" Click="WindowThree_Click"/>
+                        x:Name="WindowThree" Click="WindowThree_Click"
+                        Template="{StaticResource btnTemplate}"/>
 
                 <Button Content="Window 4" Margin="20" Padding="10"
-                        x:Name="WindowFour" Click="WindowFour_Click"/>
+                        x:Name="WindowFour" Click="WindowFour_Click"
+                        Template="{StaticResource btnTemplate}"/>
             </WrapPanel>
         </GroupBox>
     </Grid>

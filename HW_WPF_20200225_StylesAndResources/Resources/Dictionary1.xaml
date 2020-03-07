@@ -12,32 +12,40 @@
     </Style>
 
 
-    <ControlTemplate x:Key="btnTemplate">
-        <Border BorderThickness="1">
-            <Border.BorderBrush>
-                <VisualBrush>
-                    <VisualBrush.Visual>
-                        <Rectangle StrokeDashArray="5"
-                                    Stroke="Red"
-                                    StrokeThickness="2"/>
-                    </VisualBrush.Visual>
-                </VisualBrush>
-                
-            </Border.BorderBrush>
-            <Button Background="Lime" BorderThickness="0" Width="100"
-                    Padding="10 5"></Button>
+    <ControlTemplate x:Key="btnTemplate" TargetType="Button">
+        
+        <Border x:Name="btnBorder" BorderBrush="Black" BorderThickness="1" CornerRadius="10" Width="100" Background="Green" Padding="5">
+            <ContentControl
+                x:Name="btnContentComtrol"
+                Foreground="White" 
+                Content="{TemplateBinding Content}"
+                FontStyle="Italic" 
+                VerticalAlignment="Center" 
+                HorizontalAlignment="Center"/>
         </Border>
+        
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsMouseOver" Value="true">
+                <Setter TargetName="btnBorder" Property="Background" Value="Lime"/>
+                <Setter TargetName="btnContentComtrol" Property="FontWeight" Value="Bold"/>
+            </Trigger>
+
+            <Trigger Property="IsPressed" Value="true">
+                <Setter TargetName="btnBorder" Property="BorderThickness" Value="3"/>
+            </Trigger>
+        </ControlTemplate.Triggers>
+        
     </ControlTemplate>
 
     <ControlTemplate x:Key="labelTemplate">
         <Border BorderThickness="1" BorderBrush="Green" Padding="10 5">
-            <ContentControl Content="label"></ContentControl>
+            <ContentControl Content="lb"></ContentControl>
         </Border>
     </ControlTemplate>
 
     <ControlTemplate x:Key="textBoxTemplate">
         <Border BorderThickness="1" BorderBrush="Black" Padding="12 7" CornerRadius="5">
-            <ContentControl Content="text box"></ContentControl>
+            <ContentControl Content="tbx"></ContentControl>
         </Border>
     </ControlTemplate>
        
