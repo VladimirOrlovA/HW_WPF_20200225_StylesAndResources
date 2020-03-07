@@ -22,6 +22,14 @@ namespace HW_WPF_20200225_StylesAndResources
         public Window2()
         {
             InitializeComponent();
+            this.Closing += OpenMainWIndow;
+        }
+
+        private void OpenMainWIndow(object sender, EventArgs e)
+        {
+            //MessageBox.Show("Окно закрыто");
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
         }
     }
 }
